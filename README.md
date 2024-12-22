@@ -43,5 +43,5 @@ Here's an improved version of your README with clearer instructions and correcte
 ## Note
 
 - **Configuration Compatibility:**  
-  Please be aware that the configuration may not be fully compatible with Firebase Functions due to potential version differences between the TypeScript versions required by Firebase and Next.js. 
+  The configuration may not be fully compatible with Firebase Functions due to potential version differences between the TypeScript versions required by Firebase and Next.js. 
 
