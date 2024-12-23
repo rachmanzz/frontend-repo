@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${roboto.variable}`}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
-            <Container sx={{height: "100vh"}}>
+            <Container>
               {children}
             </Container>
           </ThemeProvider>
