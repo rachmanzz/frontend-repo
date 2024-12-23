@@ -40,6 +40,15 @@ Here's an improved version of your README with clearer instructions and correcte
 
 ---
 
+## Environtment (ENV)
+
+```
+NEXT_PUBLIC_FIREBASE_API=""
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=""
+NEXT_PUBLIC_FIREBASE_PROJECTID=""
+NEXT_PUBLIC_FIREBASE_URL_APIS=""
+```
+
 ## Note
 
 - **Configuration Compatibility:**  
