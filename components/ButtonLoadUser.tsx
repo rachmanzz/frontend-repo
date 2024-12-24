@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import RefreshIcon from '@mui/icons-material/Refresh';
 
 export const ButtonRefreshUsers = () => {
-    const countUser = useAppSelector((state) => state.users.users.length);
+    const {countUser, isError} = useAppSelector((state) => ({countUser: state.users.users.length, isError: state.users.error !== null}));
     const dispatch = useAppDispatch();
     const token = useAuthToken();
 
@@ -16,7 +16,7 @@ export const ButtonRefreshUsers = () => {
         dispatch(fetchUsers(token ?? ""))
     }
 
-    if (countUser === 0) return null
+    if (countUser === 0 && !isError) return null
 
     return (<IconButton onClick={onCLick} edge="end" aria-label="delete">
         <RefreshIcon />
